@@ -1,5 +1,15 @@
 # BCDevExchange-Site
-Contains code and content for the *new* BC Developers' Exchange Web Site
+This repo Contains code and content for the *new* Jekyll-based BC Developers' Exchange Web Site.
+
+## Running Locally
+ 
+The site can be locally with the following command once you have docker installed:
+
+```
+
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll
+ 
+```
 
 ## License
 
