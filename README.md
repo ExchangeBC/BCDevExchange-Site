@@ -1,6 +1,10 @@
 # BCDevExchange-Site
 This repo Contains code and content for the *new* Jekyll-based BC Developers' Exchange Web Site.
 
+The [BCDevExchange website](http://bcdevexchange.org/) is the public facing site for the BC Developers' Exchange - an experiment in tech innovation and collaboration.
+
+*We are open to pull requests!  See our [contributing guide](https://github.com/BCDevExchange/BCDevExchange-site/blob/master/CONTRIBUTING.md) for the details.*
+
 ## Running Locally
  
 The site can be locally with the following command once you have docker installed:
