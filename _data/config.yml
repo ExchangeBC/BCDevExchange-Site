@@ -1,0 +1,13 @@
+resourcesPage     : false
+projectsPage      : false
+programsPage      : false
+peoplePage        : false
+numbersPage       : false
+developersPage    : false
+rapidAdoptionPage : false
+rapidAdoptionUrl  : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
+labLink           : false
+blogPage          : true
+communityMenu     : false
+enableLogin       : true
+communityMenu     : false
