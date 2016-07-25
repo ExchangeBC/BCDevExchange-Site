@@ -12,3 +12,6 @@ markdown: kramdown
 
 exclude:
   [ Dockerfile, README.md ]
+
+github_username: bobby
+twitter_username: gene

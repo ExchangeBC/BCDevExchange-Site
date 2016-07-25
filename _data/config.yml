@@ -24,3 +24,8 @@ rapidAdoptionPage             : false
 rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
 resourcescallbackURLage       : true
 resourcesPage                 : false
+github_username               : bobby
+twitter_username              : gene
+developersURL                 : "http://www.cloudcompass.ca/"
+programsURL                   : "http://www.cloudcompass.ca/"
+
