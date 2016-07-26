@@ -13,5 +13,34 @@ markdown: kramdown
 exclude:
   [ Dockerfile, README.md ]
 
-github_username: bobby
-twitter_username: gene
+# default DevEx configuration values - can be overidden using --config flag to jekyll
+#todo cleanup/delete  unused items below
+apiUrl                        : "http://api.bcdevexchange.org/"
+rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
+codeWithUsIssuesURL           : "https://www.bcdevexchange.org/issues"
+programsURL                   : "https://www.bcdevexchange.org/programs"
+
+contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
+
+discoveryBanner               : false # whether to show experimental banner todo - grab this from old site
+
+developersCarouselImage       : "developers.jpg"
+developersImageLicenseHtml    : "Developers photo adapted from image by <a href='http://hackny.org/' analytics-on>hackny.org</a> Used under license (<a href='https://creativecommons.org/licenses/by-sa/2.0/' analytics-on>CC BY-SA 2.0</a>)"
+entrepreneursCarouselImage    : "entrepreneurs.jpg"
+entrepreneursImageLicenseHtml : "Entrepreneur photo adapted from The DEMO Conference by <a href='https://www.flickr.com/photos/democonference/17237592182/in/datetaken/' analytics-on>DEMO-Rentalroost-3673</a>. Used under license (<a href='https://creativecommons.org/licenses/by-nc-nd/2.0/' analytics-on>CC BY-NC-ND 2.0</a>)"
+publicSectorCarouselImage     : "public-sector.jpg"
+headerImageLicenseHtml        : "Cityscape photo adapted from Foggy Vancouver from West Vancouver by <a href='https://www.flickr.com/photos/gotovan/' analytics-on>GoToVan</a>. Used under license (<a href='https://creativecommons.org/licenses/by/2.0/' analytics-on>CC BY 2.0</a>)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
