@@ -24,7 +24,7 @@ permalink: /programs/
   </div>
 
   <div>
-  <iframe src="{{ site.data.config.programsURL }}" width="100%" height="500" frameborder="0" scrolling="no" onload="javascript:resizeIframe(this)">
+  <iframe src="{{ site.programsURL }}" width="100%" height="500" frameborder="0" scrolling="no" onload="javascript:resizeIframe(this)">
   </iframe>
   </div>
 

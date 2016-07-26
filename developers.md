@@ -30,7 +30,7 @@ permalink: /developers/
     </div>
   </div>
   <div>
-  <iframe src="{{ site.data.config.developersURL }}" width="100%" height="500" frameborder="0" scrolling="no" onload="javascript:resizeIframe(this)">
+  <iframe src="{{ site.developersURL }}" width="100%" height="500" frameborder="0" scrolling="no" onload="javascript:resizeIframe(this)">
   </iframe>
   </div>
   <!-- onload="javascript:resizeIframe(this)"  -->
