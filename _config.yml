@@ -17,7 +17,8 @@ exclude:
 #todo cleanup/delete  unused items below
 apiUrl                        : "http://api.bcdevexchange.org/"
 rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
-codeWithUsIssuesURL           : "https://www.bcdevexchange.org/issues"
+# this MUST have a trailing / to work correctly
+codeWithUsIssuesURL           : "https://www.bcdevexchange.org/issues/"
 programsURL                   : "https://www.bcdevexchange.org/programs"
 contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
 discoveryBanner               : false # whether to show experimental banner todo - grab this from old site
