@@ -1,3 +1,6 @@
+---
+layout: basic
+---
 <!--
 Copyright 2015 Province of British Columbia
 
@@ -17,17 +20,16 @@ See the License for the specific language governing permissions and limitations 
 		<div class=" et_pb_row et_pb_row_0">
 
 		<div class="et_pb_column et_pb_column_1_2">
-			<div inline-editable ng-bind-html='program.content.logo' style='text-align: center'>
+			<div inline-editable style='text-align: center'>
+			{{page.logo}}
 			</div>
 			<!-- .et_pb_text -->
 		</div>
 		<!-- .et_pb_column -->
 		<div class="et_pb_column et_pb_column_1_2 et_pb_column_1">
-			<span us-spinner="{radius:20, width:6, length: 15}" spinner-key="spinner-program-desc"
-				spinner-start-active="true"></span>
-
-			<div inline-editable class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_1"
-				 ng-bind-html='program.content.description'/>
+			<div inline-editable class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_1">
+			{{page.description}}
+			</div>
 			<!-- .et_pb_text -->
 		</div>
 		<!-- .et_pb_column -->
@@ -39,27 +41,7 @@ See the License for the specific language governing permissions and limitations 
 	<!-- .et_pb_section -->
 	<div class="et_pb_section  et_pb_section_1 et_pb_with_background et_section_regular">
 		<div class="et_pb_row et_pb_row_1 et_pb_row_{{nButtons}}col">
-		<div class="et_pb_column et_pb_column_1_{{nButtons}}"
-			 ng-show="program.helpWantedIssues && program.helpWantedIssues.length > 0">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_0 et_pb_blurb_position_top">
-			<div class="et_pb_blurb_content">
-				<a href="#workwithus" analytics-on analytics-event="click"
-				 analytics-category="fragment" analytics-label="#workwithus"
-				 du-smooth-scroll>
-				<div class="et_pb_main_blurb_image"><span
-					class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
-					style="color: #ffffff; background-color: #494949; border-color: #ffffff;"></span>
-				</div>
-				<div class="et_pb_blurb_container">
-					<h4>Code With Us</h4>
-				</div>
-				</a>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
+
 		<!-- .et_pb_column -->
 		<div class="et_pb_column et_pb_column_1_{{nButtons}}">
 			<div
@@ -103,12 +85,12 @@ See the License for the specific language governing permissions and limitations 
 			<!-- .et_pb_blurb -->
 		</div>
 		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons}}" ng-show="program.githubUrl">
+		<div class="et_pb_column et_pb_column_1_{{nButtons}}">
 			<div
 			class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_3 et_pb_blurb_position_top">
 			<div class="et_pb_blurb_content">
-				<a href="{{program.githubUrl}}" analytics-on analytics-event="click" analytics-category="outbound"
-				 analytics-label="{{program.githubUrl}}|id:1" target="_blank">
+				<a href="{{page.githubUrl}}" analytics-on analytics-event="click" analytics-category="outbound"
+				 analytics-label="{{page.githubUrl}}|id:1" target="_blank">
 				<div class="et_pb_main_blurb_image">
 					<i class="fa-circle-border fa fa-github fa-lg et-waypoint et_pb_animation_top et-animated"></i>
 				</div>
@@ -127,218 +109,15 @@ See the License for the specific language governing permissions and limitations 
 		<!-- .et_pb_row -->
 
 	</div>
-	<!-- .et_pb_section -->
-	<div ng-show="program.helpWantedIssues && program.helpWantedIssues.length>0" class="opportunity-list">
-		<!-- .et_pb_section -->
-		<div
-		class="et_pb_section et_pb_inner_shadow et_section_regular">
-		<div class=" et_pb_row et_pb_row_4">
-			<div class="et_pb_column et_pb_column_4_4 et_pb_column_10">
-			<div id="HPFont" class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_2">
-				<p></p>
-
-				<h1 id="workwithus" analytics-on="scrollby" scrollby-offset="35%" analytics-event="scroll"
-					analytics-category="fragment" analytics-label="#workwithus" style="text-align: center;">Code With
-				Us</h1>
-
-				<p class="lead">
-				We use open source licenses to receive, innovate and share your contributions. Contribute to issues
-				marked with a <i class="fa fa-heart" style="color:red;"></i> at your own pace. Contributions to issues
-				tagged
-				with <span class="label" style="background-color:#0052cc;"><i class="fa fa-tag"></i>$1000</span> are
-				accepted
-				according to our <a href="https://github.com/BCDevExchange/rapid-adoption/wiki">Pay for Pull Terms</a>.
-				Let’s avoid
-				duplicating effort. If you see an issue in progress, please give people time to work on it.
-				</p>
-
-			</div>
-			<!-- .et_pb_text -->
-			</div>
-			<!-- .et_pb_column -->
-
-		</div>
-		<!-- .et_pb_row -->
-
-		<div class="et_pb_row">
-			<div class="et_pb_column et_pb_column_1_1">
-			<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_6">
-				<!--open issues-->
-				<div class="panel panel-default">
-				<div class="panel-heading">Open</div>
-				<div class="panel-body">
-					<table class="table table-striped">
-					<thead>
-					<tr>
-						<th style="width: 20%;">Issue</th>
-						<th style="width: 10%;" class="hidden-phone"></th>
-						<th style="width: 10%;" >Earn</th>
-						<th class="hidden-phone">Skills Required</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr ng-repeat="issue in program.openIssues">
-						<td><a href="{{issue.html_url}}">{{issue.title}}</a>
-						</td>
-						<td class="hidden-phone" style="text-align: right">
-						<div
-							ng-repeat="label in issue.labels | filter: {name: 'help wanted'}"
-							style="background-color:#{{label.color}}" class="label">
-							<i class="fa fa-tag"></i> {{label.name}}
-						</div>
-						</td>
-						<td>
-						<div
-							ng-repeat="label in issue.labels | filter:{color:'0052cc'} as results"
-							style="background-color:#{{label.color}}" class="label">
-							<i class="fa fa-tag"></i> {{label.name}}
-						</div>
-						<div ng-if="results.length === 0"
-							 style="color:red" class="label">
-							<i class="fa fa-heart"></i>
-						</div>
-
-						</td>
-						<td class="hidden-phone">
-					<span
-						ng-repeat="label in issue.labels  | filter: {color: 'eb6420'}">
-						<span
-						style="background-color:#{{label.color}}" class="label">
-						<i class="fa fa-tag"></i> {{label.name}}
-						</span>
-					</span>
-						</td>
-					</tr>
-					<tr ng-if="program.openIssues.length === 0">
-						<td colspan="6">There are currently no open issues.</td>
-					</tr>
-					</tbody>
-					</table>
-				</div>
-				</div>
-				<!--in progress issues-->
-				<div ng-if="program.inProgressIssues.length > 0" class="panel panel-default">
-				<div class="panel-heading">In Progress</div>
-				<div class="panel-body">
-					<table class="table table-striped">
-					<thead>
-					<tr>
-						<th style="width: 20%;">Issue</th>
-						<th style="width: 10%;" class="hidden-phone"></th>
-						<th style="width: 10%;">Earn</th>
-						<th class="hidden-phone">Skills Required</th>
-						<th class="hidden-phone">Claimed by</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr ng-repeat="issue in program.inProgressIssues">
-						<td><a href="{{issue.html_url}}">{{issue.title}}</a>
-						</td>
-						<td class="hidden-phone" style="text-align: right">
-						<div
-							ng-repeat="label in issue.labels | filter: {name: 'help wanted'}"
-							style="background-color:#{{label.color}}" class="label">
-							<i class="fa fa-tag"></i> {{label.name}}
-						</div>
-						</td>
-						<td>
-						<div
-							ng-repeat="label in issue.labels | filter:{color:'0052cc'} as results"
-							style="background-color:#{{label.color}}" class="label">
-							<i class="fa fa-tag"></i> {{label.name}}
-						</div>
-						<div ng-if="results.length === 0"
-							 style="color:red" class="label">
-							<i class="fa fa-heart"></i>
-						</div>
-
-						</td>
-						<td class="hidden-phone">
-					<span
-						ng-repeat="label in issue.labels  | filter: {color: 'eb6420'}">
-						<span
-						style="background-color:#{{label.color}}" class="label">
-						<i class="fa fa-tag"></i> {{label.name}}
-						</span>
-					</span>
-						</td>
-						<td class="hidden-phone" style="white-space: nowrap">
-						<img alt="{{issue.assignee.login}}" class="ghAvatar_small" src="{{issue.assignee.avatar_url }}"/>
-						</td>
-					</tr>
-
-					</tbody>
-					</table>
-				</div>
-				</div>
-
-
-				<!--closed issues-->
-				<div ng-if="program.closedHelpWantedIssues && program.closedHelpWantedIssues.length>0"
-					 class="panel panel-default">
-				<div class="panel-heading">Done</div>
-				<div class="panel-body">
-					<table class="table table-striped">
-					<thead>
-					<tr>
-						<th style="width: 20%;">Issue</th>
-						<th style="width: 10%;" class="hidden-phone">Closed Date</th>
-						<th style="width: 10%;">Earned</th>
-						<th class="hidden-phone">Skills Required</th>
-					</tr>
-					</thead>
-					<tbody>
-
-					<tr ng-repeat="issue in program.closedHelpWantedIssues"
-						ng-if="program.closedHelpWantedIssues && program.closedHelpWantedIssues.length>0">
-						<td><a href="{{issue.html_url}}">{{issue.title}}</a>
-						</td>
-						<td class="hidden-phone" style="white-space: nowrap">
-						{{issue.closed_at | date:'yyyy-MM-dd' }}
-						</td>
-						<td>
-						<div
-							ng-repeat="label in issue.labels | filter:{color:'0052cc'} as results"
-							style="background-color:#{{label.color}}" class="label">
-							<i class="fa fa-tag"></i> {{label.name}}
-						</div>
-						<div ng-if="results.length === 0"
-							 style="color:red" class="label">
-							<i class="fa fa-heart"></i>
-						</div>
-
-						</td>
-						<td class="hidden-phone">
-					<span
-						ng-repeat="label in issue.labels  | filter: {color: 'eb6420'}">
-						<span
-						style="background-color:#{{label.color}}" class="label">
-						<i class="fa fa-tag"></i> {{label.name}}
-						</span>
-					</span>
-						</td>
-					</tr>
-					</tbody>
-					</table>
-				</div>
-
-				</div>
-			</div>
-			<div inline-editable ng-bind-html='program.content.codeWithUs'>
-			</div>
-			</div>
-			<!-- .et_pb_column -->
-		</div>
-		<!-- .et_pb_row -->
-		</div>
+	<div inline-editable>
+	{{ page.codeWithUs }}
 	</div>
 	<!-- .et_pb_section -->
-	<div class="et_pb_section  et_pb_section_2 et_section_regular et_pb_bg_layout_dark"
-		 ng-hide="program.hideStatsSection || !program.githubUrl">
+	<div class="et_pb_section  et_pb_section_2 et_section_regular et_pb_bg_layout_dark">
+
 		<div class=" et_pb_row et_pb_row_2">
 		<div class="et_pb_column et_pb_column_1_3 et_pb_column_6">
-			<div class="et_pb_number_counter et_pb_module et_pb_number_counter_0"
-				 ng-attr-data-number-value="{{::program.issues}}">
+			<div class="et_pb_number_counter et_pb_module et_pb_number_counter_0">{{page.issues}}
 			<div class="percent">
 				<p><span class="percent-value"></span>
 				</p>
@@ -351,7 +130,7 @@ See the License for the specific language governing permissions and limitations 
 		<!-- .et_pb_column -->
 		<div class="et_pb_column et_pb_column_1_3 et_pb_column_7">
 			<div class="et_pb_number_counter et_pb_module  et_pb_number_counter_1"
-				 ng-attr-data-number-value="{{::program.prs}}">
+				 ng-attr-data-number-value="">{{page.prs}}
 			<div class="percent">
 				<p><span class="percent-value"></span>
 				</p>
@@ -364,7 +143,7 @@ See the License for the specific language governing permissions and limitations 
 		<!-- .et_pb_column -->
 		<div class="et_pb_column et_pb_column_1_3 et_pb_column_8">
 			<div class="et_pb_number_counter et_pb_module  et_pb_number_counter_2"
-				 ng-attr-data-number-value="{{::program.contributors}}">
+				 ng-attr-data-number-value="">{{page.contributors}}
 			<div class="percent">
 				<p><span class="percent-value"></span>
 				</p>
@@ -395,8 +174,8 @@ See the License for the specific language governing permissions and limitations 
 				<div class="et_pb_blurb_container">
 				<h4>APIs &amp; Resources</h4>
 
-				<div inline-editable analytics-outbound-links ng-bind-html='program.content.resources'
-					 style="text-align: left;">
+				<div inline-editable analytics-outbound-links ng-bind-html=''
+					 style="text-align: left;">{{page.resources}}
 				</div>
 				</div>
 			</div>
@@ -405,7 +184,7 @@ See the License for the specific language governing permissions and limitations 
 			<!-- .et_pb_blurb -->
 		</div>
 		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons2}}" ng-hide="program.hideCommunity">
+		<div class="et_pb_column et_pb_column_1_{{nButtons2}}" ng-hide="page.hideCommunity">
 			<div
 			class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_6 et_pb_blurb_position_top">
 			<div id="community" class="et_pb_blurb_content">
@@ -416,8 +195,8 @@ See the License for the specific language governing permissions and limitations 
 				<div class="et_pb_blurb_container">
 				<h4>Community</h4>
 
-				<div inline-editable analytics-outbound-links ng-bind-html='program.content.community'
-					 style="text-align: left;">
+				<div inline-editable analytics-outbound-links ng-bind-html=''
+					 style="text-align: left;">{{page.community}}
 				</div>
 				</div>
 			</div>
@@ -426,7 +205,7 @@ See the License for the specific language governing permissions and limitations 
 			<!-- .et_pb_blurb -->
 		</div>
 		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons2}}" ng-hide="program.hideNews">
+		<div class="et_pb_column et_pb_column_1_{{nButtons2}}" ng-hide="page.hideNews">
 			<div
 			class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_7 et_pb_blurb_position_top">
 			<div id="news" class="et_pb_blurb_content">
@@ -437,8 +216,8 @@ See the License for the specific language governing permissions and limitations 
 				<div class="et_pb_blurb_container">
 				<h4>News</h4>
 
-				<div inline-editable analytics-outbound-links ng-bind-html='program.content.news'
-					 style="text-align: left;"></div>
+				<div inline-editable analytics-outbound-links ng-bind-html=''
+					 style="text-align: left;">{{page.news}}</div>
 				</div>
 			</div>
 			<!-- .et_pb_blurb_content -->
@@ -457,7 +236,7 @@ See the License for the specific language governing permissions and limitations 
 		<div id="contacts" class="et_pb_row" analytics-on="scrollby" scrollby-offset="35%" analytics-event="scroll"
 			 analytics-category="fragment" analytics-label="#contacts">
 		<div class="et_pb_column et_pb_column_1_2 et_pb_column_18 et_pb_column_single">
-			<div class="et_pb_bg_layout_dark" inline-editable ng-bind-html='program.content.contact'>
+			<div class="et_pb_bg_layout_dark" inline-editable ng-bind-html=''>{{page.contact}}
 			</div>
 			<!-- .et_pb_text -->
 		</div>
@@ -465,7 +244,7 @@ See the License for the specific language governing permissions and limitations 
 		<div class="et_pb_column et_pb_column_1_2 et_pb_column_19 et_pb_specialty_column">
 			<div class=" et_pb_row_inner et_pb_row_inner_2">
 			<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_3">
-				<div class="et_pb_bg_layout_dark" inline-editable ng-bind-html='program.content.techContact'>
+				<div class="et_pb_bg_layout_dark" inline-editable ng-bind-html=''>{{page.techContact}}
 				</div>
 				<!-- .et_pb_text -->
 			</div>
@@ -478,12 +257,12 @@ See the License for the specific language governing permissions and limitations 
 		<!-- .et_pb_row -->
 	</div>
 	<!-- .et_pb_section -->
-	<div class="et_pb_section" ng-show="program.gitters">
+	<div class="et_pb_section" ng-show="page.gitters">
 		<h1 class="et_pb_text_align_center">Engage With Us</h1>
 
 		<div id="engageWithUsContainer" class="flex-container">
-		<div ng-repeat="n in program.gitters" class="flex-item"
-			 style="padding: 4px; border-radius: 25px; border: 2px solid #8AC007;width:{{100 / program.gitters.length - 3}}%;">
+		<div ng-repeat="n in page.gitters" class="flex-item"
+			 style="padding: 4px; border-radius: 25px; border: 2px solid #8AC007;width:{{100 / page.gitters.length - 3}}%;">
 			<h3 style="text-align: center;"><a ng-attr-href='{{getGitterUrl(n, true)}}'
 											 title='Open {{n}} gitter in new window' target="_blank">{{n}}</a></h3><br/>
 			<iframe ng-src="{{getGitterUrl(n)}}" style="height: 400px; width: 100%; display:none"></iframe>
