@@ -1,0 +1,31 @@
+apiUrl                        : "http://api.bcdevexchange.org/"
+blogPage                      : true
+communityMenu                 : false
+contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
+developersCarouselImage       : "developers.jpg"
+developersImageLicenseHtml    : "Developers photo adapted from image by <a href='http://hackny.org/' analytics-on>hackny.org</a> Used under license (<a href='https://creativecommons.org/licenses/by-sa/2.0/' analytics-on>CC BY-SA 2.0</a>)"
+developersPage                : false
+discoveryBanner               : false
+enableLogin                   : true
+enableNumbersBar              : false
+entrepreneursCarouselImage    : "entrepreneurs.jpg"
+entrepreneursImageLicenseHtml : "Entrepreneur photo adapted from The DEMO Conference by <a href='https://www.flickr.com/photos/democonference/17237592182/in/datetaken/' analytics-on>DEMO-Rentalroost-3673</a>. Used under license (<a href='https://creativecommons.org/licenses/by-nc-nd/2.0/' analytics-on>CC BY-NC-ND 2.0</a>)"
+headerImageLicenseHtml        : "Cityscape photo adapted from Foggy Vancouver from West Vancouver by <a href='https://www.flickr.com/photos/gotovan/' analytics-on>GoToVan</a>. Used under license (<a href='https://creativecommons.org/licenses/by/2.0/' analytics-on>CC BY 2.0</a>)"
+jekyllBlogUrl                 : "https://bcdevexchange.github.io/blog"
+labLink                       : false
+labURL                        : "https://lab.bcdevexchange.org"
+linkedinLogin                 : false
+numbersPage                   : false
+peoplePage                    : false
+programsPage                  : false
+projectsPage                  : false
+publicSectorCarouselImage     : "public-sector.jpg"
+rapidAdoptionPage             : false
+rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
+resourcescallbackURLage       : true
+resourcesPage                 : false
+github_username               : bobby
+twitter_username              : gene
+developersURL                 : "http://www.cloudcompass.ca/"
+programsURL                   : "http://www.cloudcompass.ca/"
+

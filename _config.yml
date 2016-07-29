@@ -32,7 +32,11 @@ publicSectorCarouselImage     : "public-sector.jpg"
 headerImageLicenseHtml        : "Cityscape photo adapted from Foggy Vancouver from West Vancouver by <a href='https://www.flickr.com/photos/gotovan/' analytics-on>GoToVan</a>. Used under license (<a href='https://creativecommons.org/licenses/by/2.0/' analytics-on>CC BY 2.0</a>)"
 
 
-
+page_gen:
+  - data: 'programdata'
+    template: 'view-program'
+    name: 'name'
+    dir: 'programpages'
 
 
 
