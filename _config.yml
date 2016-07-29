@@ -19,11 +19,8 @@ apiUrl                        : "http://api.bcdevexchange.org/"
 rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
 codeWithUsIssuesURL           : "https://www.bcdevexchange.org/issues"
 programsURL                   : "https://www.bcdevexchange.org/programs"
-
 contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
-
 discoveryBanner               : false # whether to show experimental banner todo - grab this from old site
-
 developersCarouselImage       : "developers.jpg"
 developersImageLicenseHtml    : "Developers photo adapted from image by <a href='http://hackny.org/' analytics-on>hackny.org</a> Used under license (<a href='https://creativecommons.org/licenses/by-sa/2.0/' analytics-on>CC BY-SA 2.0</a>)"
 entrepreneursCarouselImage    : "entrepreneurs.jpg"
@@ -35,7 +32,7 @@ headerImageLicenseHtml        : "Cityscape photo adapted from Foggy Vancouver fr
 page_gen:
   - data: 'programdata'
     template: 'view-program'
-    name: 'name'
+    name: 'programname'
     dir: 'programpages'
 
 

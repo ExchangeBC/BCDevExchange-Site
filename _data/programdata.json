@@ -14,7 +14,7 @@
             "resources": "<ul>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/tree/master/BCA%20API%20Discussion%20Guide\">What is this about?&nbsp;</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/Who-is-BCA.md\">Who is BC Assessment?</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/What-does-BCA-want-to-learn.md\">What does BCA want to learn?</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/Use-Cases.md\">Use Cases</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/Scope-and-Constraints.md\">What are the scope and constraints?</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/How-can-I-participate.md\">How to particpate?</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/Next-Steps.md\">What are the next steps</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification\">Open API Spec in GitHub</a></li>\n\t<li><a href=\"https://github.com/BCDevExchange/bc-property-api-specification/blob/master/BCA%20API%20Discussion%20Guide/BCA-Development-Map.png\">API Development Map</a></li>\n\t<li><a href=\"http://www.bcassessment.ca/\">BCA Website</a></li>\n</ul>\n",
             "description": "<h2>BC Assessment Property API Specification Development</h2>\n\n<p>BC Assessment believes better access to property information can create economic opportunities for companies across British Columbia.<br />\n&nbsp;<br />\nWe&#39;ve been told that Application Programming Interfaces (APIs) are the way of the future to create data access.<br />\n&nbsp;<br />\nWe want your ideas to make an API that works, and works well.<br />\n&nbsp;<br />\nThat&#39;s why we&#39;re opening a collaboration around creating an API specification that we hope you will want to use,&nbsp;supported by a viable business model.<br />\n&nbsp;<br />\nThe collaboration will happen in two streams, one for entrepreneurs and businesses in the property market, the other for developers versed in the technical space of APIs. Some tech entrepreneurs may be interested in participating in both streams.<br />\n&nbsp;<br />\nRead the <a href=\"https://github.com/BCDevExchange/bc-property-api-specification/tree/master/BCA%20API%20Discussion%20Guide\">Discussion Guide</a>&nbsp;to learn how you can participate.&nbsp;<br />\n&nbsp;</p>\n",
         "id": "f87cf50a-2faa-4a39-bb91-00473e8b1698",
-        "name": "BC Assessment",
+        "programname": "BC Assessment",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -38,7 +38,7 @@
             "codeWithUs": ""
         ,
         "id": "14539822-b5b7-4c99-b6ee-5fcd08c80f93",
-        "name": "Citizen Engagement Web Toolkit",
+        "programname": "Citizen Engagement Web Toolkit",
         "githubUrl": "https://github.com/bcgov/citizen-engagement-web-toolkit",
         "editors": [
             "562fec3bba4a10b686eef16a"
@@ -64,7 +64,7 @@
             "description": "<p><a href=\"http://www2.gov.bc.ca/gov/content?id=FF80E0B985F245CEA62808414D78C41B\">Environmental Reporting BC</a>&nbsp;provides access to scientific data and information about our environment and how it relates to British Columbians. This information comes in the form of indicators that examine the state and trends of different aspects of our environment.&nbsp;Our <a href=\"http://www2.gov.bc.ca/assets/gov/environment/research-monitoring-and-reporting/reporting/envreportbc/content/environmental_reporting_bc_postcard_june2016.png\">web-based model</a> strives to serve the varied needs of our&nbsp;<a href=\"http://blog.data.gov.bc.ca/2013/03/environmental-reporting-bc-engages-citizens-on-the-environment/\">audiences</a>, and provide timely, open, and dynamic reports on the environment that are easy to access and understand.&nbsp;Since its inception, Environmental Reporting BC has embraced openness, sharing&nbsp;methods&nbsp;and making&nbsp;the&nbsp;<a href=\"http://catalogue.data.gov.bc.ca/dataset?q=stateofenvironment+OR+stateofforests&amp;sort=title_string+asc\">data underlying our analyses</a>&nbsp;available on DataBC under the&nbsp;<a href=\"http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf\">Open Government License &ndash; British Columbia</a>.&nbsp;We are also moving our code &ndash; the scripts we write to get, prepare, analyse and present environmental data and information into the&nbsp;<a href=\"https://github.com/bcgov\">Province&rsquo;s GitHub space</a>.&nbsp;</p>\n"
         ,
         "id": "8623dbee-01a9-4e93-9009-aead6afc1053",
-        "name": "Environmental Reporting BC",
+        "programname": "Environmental Reporting BC",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -169,7 +169,7 @@
             "techContact": "<h2><big>BC Laws Manager</big></h2>\n\n<p><img alt=\"Dwayne Gordon\" src=\"https://github.com/BCDevExchange/BCDevExchange-Programs/blob/master/Programs/Logos/BCL_Dwayne_Cropped.png?raw=true\" style=\"height:150px; width:120px\" /><br />\nDwayne Gordon<br />\nManager, Digital Publishing<br />\n<a href=\"mailto:dwayne.gordon@qp.gov.bc.ca?subject=BC%20Developer%20Exchange%20Contact\">dwayne.gordon@qp.gov.bc.ca</a></p>\n\n<h2><big>API Technical Expert</big></h2>\n\n<p><img alt=\"\" src=\"https://github.com/BCDevExchange/BCDevExchange-Programs/blob/master/Programs/Logos/BCL_Alex.jpg?raw=true\" style=\"height:150px; width:120px\" /><br />\nAlex Strudwick<br />\nSupervisor, Information Systems and Application Development<br />\n<a href=\"mailto:alex.strudwick@qp.gov.bc.ca?subject=BC%20Developer%20Exchange%20Contact\">alex.strudwick@qp.gov.bc.ca</a><br />\n<a href=\"https://github.com/AlexStrudwick\">@alexstrudwick</a></p>\n\n<h2><big>API\\GIT Technical Expert</big></h2>\n\n<p><img alt=\"Chris Ditcher\" src=\"https://github.com/BCDevExchange/BCDevExchange-Programs/blob/master/Programs/Logos/BCL_Chris.jpg?raw=true\" style=\"height:150px; width:120px\" /><br />\nChris Ditcher<br />\nLead Programmer Analyst<br />\n<a href=\"mailto:chris.ditcher@qp.gov.bc.ca?subject=BC%20Developer%20Exchange%20Contact\">chris.ditcher@qp.gov.bc.ca</a><br />\n<a href=\"https://github.com/cditcher\">@cditcher</a></p>\n\n<h2>&nbsp;</h2>\n"
         ,
         "id": "93bab748-77c4-415a-8eee-d7d791f29c82",
-        "name": "BC Laws",
+        "programname": "BC Laws",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -189,7 +189,7 @@
             "work": "Lorem ipsum"
         ,
         "id": "fb8fee8b-c221-4e4a-be0e-bd2923f190a9",
-        "name": "City of Vancouver",
+        "programname": "City of Vancouver",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -213,7 +213,7 @@
             "techContact": "<h2><a href=\"mailto:tech@kamloops.ca?Subject=BC%20Developer%20Exchange%20Tech%20Contact\" target=\"_top\">Technical Contact</a></h2>\n\n<p>Mark Laudon</p>\n\n<p>GIS Anayst</p>\n\n<p><a href=\"mailto:MNLaudon@surrey.ca?subject=Question%20from%20the%20BCDevExchange\">MNLaudon@surrey.ca</a></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n"
         ,
         "id": "f64a9ab4-ad61-4ecf-bfb2-9432caef7c12",
-        "name": "City of Surrey",
+        "programname": "City of Surrey",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -238,7 +238,7 @@
             "skills": ""
         ,
         "id": "b910807b-a61e-44bc-8cdb-349957cd7661",
-        "name": "FirstVoices Dictionary",
+        "programname": "FirstVoices Dictionary",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -260,7 +260,7 @@
             "description": "<p>The BC Physical Address Geocoder web service locates and standardizes British Columbia civic addresses within your web pages and applications.&nbsp; The Geocoder is a REST web service that lets you integrate real-time standardization, validation, and geocoding of physical addresses into your own applications. If you plan to integrate the BC Physical Address Geocoder into your applications, we encourage you to contact us and ask to receive important updates about the Geocoder.</p>\n"
         ,
         "id": "45a026a9-86a0-495e-9707-a0c6c19924c6",
-        "name": "BC Physical Address Geocoder",
+        "programname": "BC Physical Address Geocoder",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -286,7 +286,7 @@
             "work": "Lorem ipsum"
         ,
         "id": "5d2d491a-bfdb-486d-b98d-10de2e45e90b",
-        "name": "BC Data Catalogue",
+        "programname": "BC Data Catalogue",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -309,7 +309,7 @@
             "techContact": "<p><a href=\"mailto:tech@kamloops.ca?Subject=BC%20Developer%20Exchange%20Tech%20Contact\" target=\"_top\">Technical Contact</a></p>\n\n<p>Adam Chadwick</p>\n\n<p><a href=\"mailto:achadwick@kamloops.ca?subject=Question%20from%20BCDevExchange\">achadwick@kamloops.ca</a></p>\n"
         ,
         "id": "e9dd168c-12bd-4c6e-9efc-61267066ac18",
-        "name": "City of Kamloops",
+        "programname": "City of Kamloops",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -340,7 +340,7 @@
             "techContact": "<p><a href=\"mailto:tech@kamloops.ca?Subject=BC%20Developer%20Exchange%20Tech%20Contact\" target=\"_top\">Technical Contact</a></p>\n\n<p><a href=\"mailto:Robin.Windels@gov.bc.ca?subject=Question%20from%20BCDevExchange\">Robin.Windels@gov.bc.ca</a></p>\n\n<p>&nbsp;</p>\n"
         ,
         "id": "cfaf2c01-3c77-401c-a16e-2e93e51d33c3",
-        "name": "Open511-DriveBC",
+        "programname": "Open511-DriveBC",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -368,7 +368,7 @@
             "codeWithUs": "<p><a href=\"https://waffle.io/BCDevExchange/BCDevExchange-app\">View our work board.</a></p>\n"
         ,
         "id": "3d972cde-b2db-4988-9741-ba3625b1bcf3",
-        "name": "BCDevExchange",
+        "programname": "BCDevExchange",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -392,7 +392,7 @@
             "work": "<p>Coming soon</p>\n"
         ,
         "id": "bb8faa8d-c5551-4e4a-be0e-bd2913f190a3",
-        "name": "City of Victoria",
+        "programname": "City of Victoria",
         "editors": [
             "5539799570244d30a26cc453"
         ],
@@ -415,7 +415,7 @@
             "techContact": "<h2><big>Technical Contact</big></h2>\n\n<p><br />\nVito Karanovic<br />\n<a href=\"mailto:developer@translink.ca?subject=BCDevExchange%20contact\">developer@translink.ca</a></p>\n"
         ,
         "id": "b174a550-93e8-404e-901b-5b884a5f704f",
-        "name": "TransLink",
+        "programname": "TransLink",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -442,7 +442,7 @@
             "description": "<h1>Environmental Assessment Office</h1>\n\n<p>The Environmental Assessment Office (EAO) is an independent provincial agency responsible for conducting Environmental Assessments , and administering the B.C.&nbsp;<em>Environmental Assessment Act</em>. EAO leads major project reviews and prepares an assessment report detailing the findings of its review, which may also contain recommendations. The report, along with the project application, is referred to two government Ministers, who decide on project approval. Once approved, an EA certificate is issued.</p>\n\n<p>The public can find information on projects under review on the EAO&#39;s website.&nbsp;Work is underway to improve web access to project information. &nbsp;The&nbsp;computer code being developed for this is available under an open source license from the Government of B.C.</p>\n\n<p>&nbsp;</p>\n"
         ,
         "id": "b26dd2e3-db33-46b6-9ae3-d7e6faeab899",
-        "name": "Environmental Assessment Office",
+        "programname": "Environmental Assessment Office",
         "editors": [
             "55de4ad2729f616a7f2beed2x"
         ],
@@ -464,7 +464,7 @@
             "work": "Lorem ipsum"
         ,
         "id": "83f239b6-039b-4364-8d06-c8a5f0729aea",
-        "name": "Township of Langley",
+        "programname": "Township of Langley",
         "editors": [
             "55de4ad2729f616a7f2beed2x",
             "5539799570244d30a26cc453"
@@ -490,7 +490,7 @@
             "work": "Lorem ipsum"
         ,
         "id": "3a2218b9-b9b8-4102-a795-f41ac276a607",
-        "name": "DataBC Web Mapping",
+        "programname": "DataBC Web Mapping",
         "editors": [],
         "hideWorkWithUs": true,
         "hideSkillsWeNeed": true,
@@ -512,7 +512,7 @@
             "techContact": "<h2><big>Technical Lead</big></h2>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/BCDevExchange/BCDevExchange-Programs/master/Programs/Logos/Todd_1271.jpg\" style=\"height:150px; width:120px\" /><br />\nTodd Wilson<br />\n<a href=\"mailto:Todd.Wilson@gov.bc.ca?subject=BC%20Developer%20Exchange%20Contact\">Todd.Wilson@gov.bc.ca</a><br />\n<a href=\"https://github.com/kelpisland\">@kelpisland</a>&nbsp;</p>\n\n<h2>Technical Contact</h2>\n\n<p><img alt=\"\" src=\"https://raw.githubusercontent.com/BCDevExchange/BCDevExchange-Programs/master/Programs/Logos/Loren_1476.jpg\" style=\"height:150px; width:120px\" /><br />\nLoren Mullane<br />\n<a href=\"mailto:Loren.Mullane@gov.bc.ca?subject=BCDevExchange%20contact\">Loren.Mullane@gov.bc.ca</a><br />\n<a href=\"https://github.com/lmullane\">@lmullane</a></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n"
         ,
         "id": "45e10b74-276d-11e6-b67b-9e71128cae77",
-        "name": "OCIO Tech Strategies",
+        "programname": "OCIO Tech Strategies",
         "editors": [],
         "hideWorkWithUs": true,
         "hideSkillsWeNeed": true,
