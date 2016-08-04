@@ -2,6 +2,7 @@
 layout: basic
 title: Developers
 permalink: /developers/
+published: true
 ---
 
 <div class="container-fluid">
@@ -16,14 +17,7 @@ permalink: /developers/
       <div class="jumbotron">
 
         <p class="lead">
-          We use open source licenses to receive, innovate and share your contributions. Contribute to issues marked
-          with a
-          <i class="fa fa-heart" style="color:red;"></i> at your own pace. Contributions to issues tagged with <span
-          class="label" style="background-color:#0052cc;"><i class="fa fa-tag"></i>$1000</span> are accepted according
-          to
-          our <a href="https://github.com/BCDevExchange/rapid-adoption/wiki">Pay for Pull Terms</a>. Let’s avoid
-          duplicating
-          effort. If you see an issue in progress, please give people time to work on it.
+         We’re looking to improve our partnerships… so we’re experimenting with new ways of interacting with the BC development community. Using micro-purchases and open-source licenses we want to create an easier and more effective way of receiving your code contributions. You can contribute to government open source projects on a timeline that aligns with your needs as a volunteer contributor (look for work tagged with a [insert graphic]). Alternatively, submit the code for issues tagged with [insert graphic] and you could get paid (see our Pay for Pull Terms). Most of all we want to avoid any duplication of effort so If you see that someone has “claimed” an issue please give them time and space to complete that work (or give them a helping hand if appropriate).
         </p>
 
       </div>
