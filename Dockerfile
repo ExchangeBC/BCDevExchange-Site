@@ -17,6 +17,8 @@ RUN chown -R jekyll:0 /site && chmod -R 770 /site
 
 USER jekyll
 
+ENV JEKYLL_ENV=production JEKYLL_CONFIG="--config=_config.yml"
+
 EXPOSE 4000
 
 CMD jekyll serve --host 0.0.0.0
