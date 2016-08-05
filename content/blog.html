@@ -4,21 +4,42 @@ title: Blog Posts
 permalink: /blog/
 ---
 
-List of blog posts goes here
+<div class="container">
+<div class="row page-header"> <div class="col-lg-12"> <h1>Blog</h1> </div> </div>
+<div class="resource-list row">
 
-<ul>
+<ul class="resource-list list-unstyled table-bordered">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }} {{ post.date | date: "%b %-d, %Y" }} {{ post.categories }}</a>
-      {{ post.excerpt }}
+    <li class="resource">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-10">
+                             <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                             {{ post.date | date: "%b %-d, %Y" }}
+                              {% for cat in post.categories %}
+                              <span class="label label-default">{{ cat }}</span>
+                              {% endfor %}
+                            <br>
+                        </div>
+                        <div class="col-md-3 col-lg-2">
+                            <a href="{{ post.url }}" class="btn btn-primary btn-block" >Read</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9 col-lg-10">
+                            <p>{{ post.description }}</p>
+                        </div>
+                    </div>
     </li>
   {% endfor %}
 </ul>
 
 
+</div>
+</div>
 
 
-
+<!--
 
 <div ng-if="blogPath" class="container" >
   <br />
@@ -97,3 +118,4 @@ List of blog posts goes here
         </div>
     </div>
 </div>
+ -->
