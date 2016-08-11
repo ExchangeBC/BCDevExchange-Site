@@ -27,7 +27,11 @@ permalink: /blog/
 
                     <div class="row">
                         <div class="col-md-9 col-lg-10">
+                          {% if post.description %}
                             <p>{{ post.description }}</p>
+                          {% else %}
+                            <p>{{ post.excerpt }}</p>
+                          {% endif %}
                         </div>
                     </div>
     </li>
