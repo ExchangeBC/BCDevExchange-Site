@@ -3301,7 +3301,7 @@ var wpCustomFn = function ($) {
         $(this).addClass('et-animated');
       }
     });
-    
+
     $('#engageWithUsContainer').waypoint({
       offset: '80%',
       handler: function (direction) {
