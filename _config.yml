@@ -19,6 +19,7 @@ apiUrl                        : "http://api.bcdevexchange.org/"
 rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
 # this MUST have a trailing / to work correctly
 codeWithUsIssuesURL           : "http://apps-bcdevexchange-dev.pathfinder.gov.bc.ca/#/app/developers/"
+# codeWithUsIssuesURL           : "http://localhost:1337/#/app/developers/"
 programsURL                   : "https://www.bcdevexchange.org/programs"
 contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
 discoveryBanner               : false # whether to show experimental banner todo - grab this from old site

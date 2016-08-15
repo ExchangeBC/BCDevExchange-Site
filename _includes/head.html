@@ -53,10 +53,12 @@
 	//ga('send', 'pageview');
 	</script>
 	<script language="javascript" type="text/javascript">
-		function resizeIframe(obj) {
-			console.log ('resizing');
-			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-		}
+		window.addEventListener('message', function (e) {
+			// don't care about origin
+			var height = e.data;
+			var el = document.getElementById ('pleaseresizeme');
+			el.style.height = height;
+		}, false);
 	</script>
 </head>
 
