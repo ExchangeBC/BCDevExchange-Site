@@ -7,7 +7,9 @@
 
     {% include header.html %}
 
+    <div  notify-load='mainContent' id="main-content" ng-view autoscroll="true">
     {{ content }}
+    </div>
 
     {% include footer.html %}
 
