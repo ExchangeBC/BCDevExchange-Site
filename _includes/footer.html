@@ -35,8 +35,9 @@
     </div>
   </div>
 </div>
-<div id="footer-banner-padding" style="height: 54px" ng-show="config.discoveryBanner" ng-cloak/>
-<nav class="navbar navbar-displayBanner navbar-fixed-bottom ng-scope" ng-show="config.discoveryBanner" ng-cloak>
+{% if config.discoveryBanner %}
+<div id="footer-banner-padding" style="height: 54px" />
+<nav class="navbar navbar-displayBanner navbar-fixed-bottom " >
   <div class="container">
     <div class="navbar-left navbar-title-displayBanner">
       Exploration <i class="fa fa-flask"></i> Lab
@@ -52,6 +53,7 @@
     </div>
   </div>
 </nav>
+{% endif %}
 
 <!--
   Javascript

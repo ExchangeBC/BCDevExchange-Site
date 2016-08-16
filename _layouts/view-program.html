@@ -14,388 +14,415 @@ Unless required by applicable law or agreed to in writing, software distributed 
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 -->
+{% assign nButtons = 2 %}
+{% assign nButtons2 = 1 %}
+{% assign helpWanted = false %}
+
+{% if (page.githubUrl) %}
+	{% assign github = true %}
+	{% assign nButtons = 3 %}
+{% else %}
+	{% assign github = false %}
+{% endif %}
+
+{% assign showCommunity = true %}
+{% if page.hideCommunity %}
+	{% assign showCommunity = false %}
+{% endif %}
+
+
+{% assign showNews = true %}
+{% if page.hideNews %}
+	{% assign showNews = false %}
+{% endif %}
+
+{% if (showNews && showCommunity) %}
+	{% assign nButtons2 = 3 %}
+{% elsif showNews || showCommunity %}
+	{% assign nButtons2 = 2 %}
+{% endif %}
+
+
+
+
+{% assign helpWantedListing = true %}
 <article>
-	<div class="entry-content">
-	<div class="et_pb_section et_pb_inner_shadow  et_pb_section_0 et_pb_with_background et_section_regular">
-		<div class=" et_pb_row et_pb_row_0">
-
-		<div class="et_pb_column et_pb_column_1_2">
-			<div inline-editable style='text-align: center'>
-			{{page.logo}}
-			</div>
-			<!-- .et_pb_text -->
-		</div>
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_2 et_pb_column_1">
-			<div inline-editable class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_1">
-			{{page.description}}
-			</div>
-			<!-- .et_pb_text -->
-		</div>
-		<!-- .et_pb_column -->
-
-		</div>
-		<!-- .et_pb_row -->
-
+	<div>
+	<ul>
+		<li><b>page.hideCommunity:</b> {{ page.hideCommunity }}</li>
+		<li><b>showNews:</b> {{ showNews }}</li>
+		<li><b>showCommunity:</b> {{ showCommunity }}</li>
+		<li><b>helpWantedListing:</b> {{ helpWantedListing }}</li>
+		<li><b>nButtons:</b> {{ nButtons }}</li>
+		<li><b>nButtons2:</b> {{ nButtons2 }}</li>
+	</ul>
 	</div>
-	<!-- .et_pb_section -->
-	<div class="et_pb_section  et_pb_section_1 et_pb_with_background et_section_regular">
-		<div class="et_pb_row et_pb_row_1 et_pb_row_{{nButtons}}col">
+  <div class="entry-content">
+    <div class="et_pb_section et_pb_inner_shadow  et_pb_section_0 et_pb_with_background et_section_regular">
+      <div class=" et_pb_row et_pb_row_0">
 
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons}}">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_1 et_pb_blurb_position_top">
-			<div class="et_pb_blurb_content">
-				<a href="#resources">
-				<div class="et_pb_main_blurb_image"><span
-					class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
-					style="color: #ffffff; background-color: #494949; border-color: #ffffff;"></span>
-				</div>
-				<div class="et_pb_blurb_container">
-					<h4>APIs &amp; Resources</h4>
-				</div>
-				</a>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons}}">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_2 et_pb_blurb_position_top">
-			<div class="et_pb_blurb_content">
-				<a href="#contacts" analytics-on analytics-event="click"
-				 analytics-category="fragment" analytics-label="#contacts"
-				 du-smooth-scroll>
-				<div class="et_pb_main_blurb_image"><span
-					class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
-					style="color: #ffffff; background-color: #494949; border-color: #ffffff;">&#xe010;</span>
-				</div>
-				<div class="et_pb_blurb_container">
-					<h4>Contact Us</h4>
-				</div>
-				</a>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons}}">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_3 et_pb_blurb_position_top">
-			<div class="et_pb_blurb_content">
-				<a href="{{page.githubUrl}}" analytics-on analytics-event="click" analytics-category="outbound"
-				 analytics-label="{{page.githubUrl}}|id:1" target="_blank">
-				<div class="et_pb_main_blurb_image">
-					<i class="fa-circle-border fa fa-github fa-lg et-waypoint et_pb_animation_top et-animated"></i>
-				</div>
-				<div class="et_pb_blurb_container">
-					<h4>GitHub</h4>
-				</div>
-				</a>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
-		<!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_2">
+          <div inline-editable style='text-align: center'>
+          {{page.logo}}
+          </div>
+          <!-- .et_pb_text -->
+        </div>
+        <!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_2 et_pb_column_1">
+          <span us-spinner="{radius:20, width:6, length: 15}" spinner-key="spinner-program-desc"
+                spinner-start-active="true"></span>
 
-		</div>
-		<!-- .et_pb_row -->
+          <div inline-editable class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_1">
+               {{page.description}}
+          </div>
+          <!-- .et_pb_text -->
+        </div>
+        <!-- .et_pb_column -->
 
-	</div>
-	<div inline-editable>
-	{{ page.codeWithUs }}
-	</div>
-	<!-- .et_pb_section -->
-<!-- 	<div class="et_pb_section  et_pb_section_2 et_section_regular et_pb_bg_layout_dark">
+      </div>
+      <!-- .et_pb_row -->
 
-		<div class=" et_pb_row et_pb_row_2">
-		<div class="et_pb_column et_pb_column_1_3 et_pb_column_6">
-			<div class="et_pb_number_counter et_pb_module et_pb_number_counter_0">{{page.issues}}
-			<div class="percent">
-				<p><span class="percent-value"></span>
-				</p>
-			</div>
-			<h3>Issues</h3>
-			<canvas height="0" width="0"></canvas>
-			</div>
-		</div>
-		<div class="et_pb_column et_pb_column_1_3 et_pb_column_7">
-			<div class="et_pb_number_counter et_pb_module  et_pb_number_counter_1"
-				 ng-attr-data-number-value="">{{page.prs}}
-			<div class="percent">
-				<p><span class="percent-value"></span>
-				</p>
-			</div>
-			<h3>Closed Pull Requests</h3>
-			<canvas height="0" width="0"></canvas>
-			</div>
-		</div>
-		<div class="et_pb_column et_pb_column_1_3 et_pb_column_8">
-			<div class="et_pb_number_counter et_pb_module  et_pb_number_counter_2"
-				 ng-attr-data-number-value="">{{page.contributors}}
-			<div class="percent">
-				<p><span class="percent-value"></span>
-				</p>
-			</div>
-			<h3>Contributors</h3>
-			<canvas height="0" width="0"></canvas>
-			</div>
-		</div>
+    </div>
+    <!-- .et_pb_section -->
+    <div class="et_pb_section  et_pb_section_1 et_pb_with_background et_section_regular">
+      <div class="et_pb_row et_pb_row_1 et_pb_row_{{nButtons}}col">
+      	{% if helpWanted %}
+        <div class="et_pb_column et_pb_column_1_{{nButtons}}">
+          <div class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_0 et_pb_blurb_position_top">
+            <div class="et_pb_blurb_content">
+              <a href="#workwithus" analytics-on analytics-event="click" analytics-category="fragment" analytics-label="#workwithus" du-smooth-scroll>
+                <div class="et_pb_main_blurb_image">
+                	<span class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated" style="color: #ffffff; background-color: #494949; border-color: #ffffff;">
+                		
+                	</span>
+                </div>
+                <div class="et_pb_blurb_container">
+                  <h4>Code With Us</h4>
+                </div>
+              </a>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        {% endif %}
+        <!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_{{nButtons}}">
+          <div class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_1 et_pb_blurb_position_top">
+            <div class="et_pb_blurb_content">
+              <a href="#resources" analytics-on analytics-event="click" analytics-category="fragment" analytics-label="#resources" du-smooth-scroll>
+                <div class="et_pb_main_blurb_image"><span
+                  class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
+                  style="color: #ffffff; background-color: #494949; border-color: #ffffff;"></span>
+                </div>
+                <div class="et_pb_blurb_container">
+                  <h4>APIs &amp; Resources</h4>
+                </div>
+              </a>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        <!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_{{nButtons}}">
+          <div class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_2 et_pb_blurb_position_top">
+            <div class="et_pb_blurb_content">
+              <a href="#contacts" analytics-on analytics-event="click" analytics-category="fragment" analytics-label="#contacts" du-smooth-scroll>
+                <div class="et_pb_main_blurb_image">
+                	<span class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated" style="color: #ffffff; background-color: #494949; border-color: #ffffff;">
+                  	&#xe010;
+                  </span>
+                </div>
+                <div class="et_pb_blurb_container">
+                  <h4>Contact Us</h4>
+                </div>
+              </a>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        <!-- .et_pb_column -->
+        {% if page.githubUrl %}
+        <div class="et_pb_column et_pb_column_1_{{nButtons}}">
+          <div class="et_pb_blurb et_pb_module et_pb_bg_layout_dark et_pb_text_align_center  et_pb_blurb_3 et_pb_blurb_position_top">
+            <div class="et_pb_blurb_content">
+              <a href="{{program.githubUrl}}" analytics-on analytics-event="click" analytics-category="outbound" analytics-label="{{program.githubUrl}}|id:1" target="_blank">
+                <div class="et_pb_main_blurb_image">
+                  <i class="fa-circle-border fa fa-github fa-lg et-waypoint et_pb_animation_top et-animated"></i>
+                </div>
+                <div class="et_pb_blurb_container">
+                  <h4>GitHub</h4>
+                </div>
+              </a>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        <!-- .et_pb_column -->
+        {% endif %}
+      </div>
+      <!-- .et_pb_row -->
 
-		</div>
+    </div>
+    <!-- .et_pb_section -->
+{% if helpWantedListing %}
+<div class="opportunity-list">
+<div class="et_pb_section et_pb_inner_shadow et_section_regular">
+<div class="et_pb_row">
+<div class="et_pb_column et_pb_column_1_1">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_6">
+<iframe id="pleaseresizeme" src="{{ site.codeWithUsIssuesURL }}{{ page.shortTitle }}" width="100%" frameborder="0" scrolling="no" ></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endif %}
+<!-- OLD listing went here -->
 
-	</div>
- -->
- 	<!-- .et_pb_section -->
-	<div class="et_pb_section  et_pb_section_7 et_section_regular" analytics-on="scrollby" scrollby-offset="35%"
-		 analytics-event="scroll" analytics-category="fragment" analytics-label="#resources">
-		<div class="et_pb_row et_pb_row_6 et_pb_row_4col">
-		<div class="et_pb_column  et_pb_column_1_{{nButtons2}}">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_4 et_pb_blurb_position_top">
-			<div class="et_pb_blurb_content" id="resources">
-				<div class="et_pb_main_blurb_image"><span
-				class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border"
-				style="color: #7EBEC5; background-color: #ffffff; border-color: #7EBEC5;"></span>
-				</div>
-				<div class="et_pb_blurb_container">
-				<h4>APIs &amp; Resources</h4>
+<!-- OLD stats went here -->
 
-				<div inline-editable analytics-outbound-links ng-bind-html=''
-					 style="text-align: left;">{{page.resources}}
-				</div>
-				</div>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons2}}" ng-hide="page.hideCommunity">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_6 et_pb_blurb_position_top">
-			<div id="community" class="et_pb_blurb_content">
-				<div class="et_pb_main_blurb_image"><span
-				class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border"
-				style="color: #7EBEC5; background-color: #ffffff; border-color: #7EBEC5;">w</span>
-				</div>
-				<div class="et_pb_blurb_container">
-				<h4>Community</h4>
+    <div class="et_pb_section  et_pb_section_7 et_section_regular" analytics-on="scrollby" scrollby-offset="35%"
+         analytics-event="scroll" analytics-category="fragment" analytics-label="#resources">
+      <div class="et_pb_row et_pb_row_6 et_pb_row_4col">
+        <div class="et_pb_column  et_pb_column_1_{{nButtons2}}">
+          <div class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_4 et_pb_blurb_position_top">
+            <div class="et_pb_blurb_content" id="resources">
+              <div class="et_pb_main_blurb_image"><span
+                class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
+                style="color: #7EBEC5; background-color: #ffffff; border-color: #7EBEC5;"></span>
+              </div>
+              <div class="et_pb_blurb_container">
+                <h4>APIs &amp; Resources</h4>
 
-				<div inline-editable analytics-outbound-links ng-bind-html=''
-					 style="text-align: left;">{{page.community}}
-				</div>
-				</div>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_{{nButtons2}}" ng-hide="page.hideNews">
-			<div
-			class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_7 et_pb_blurb_position_top">
-			<div id="news" class="et_pb_blurb_content">
-				<div class="et_pb_main_blurb_image"><span
-				class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border"
-				style="color: #7EBEC5; background-color: #ffffff; border-color: #7EBEC5;"></span>
-				</div>
-				<div class="et_pb_blurb_container">
-				<h4>News</h4>
+                <div inline-editable analytics-outbound-links style="text-align: left;">
+                {{ page.resources }}
+                </div>
+              </div>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        <!-- .et_pb_column -->
+        {% if showCommunity %}
+        <div class="et_pb_column et_pb_column_1_{{nButtons2}}">
+          <div
+            class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_6 et_pb_blurb_position_top">
+            <div id="community" class="et_pb_blurb_content">
+              <div class="et_pb_main_blurb_image"><span
+                class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
+                style="color: #7EBEC5; background-color: #ffffff; border-color: #7EBEC5;">w</span>
+              </div>
+              <div class="et_pb_blurb_container">
+                <h4>Community</h4>
 
-				<div inline-editable analytics-outbound-links ng-bind-html=''
-					 style="text-align: left;">{{page.news}}</div>
-				</div>
-			</div>
-			<!-- .et_pb_blurb_content -->
-			</div>
-			<!-- .et_pb_blurb -->
-		</div>
-		<!-- .et_pb_column -->
+                <div inline-editable analytics-outbound-links style="text-align: left;">
+                     {{page.community}}
+                </div>
+              </div>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        {% endif %}
+        <!-- .et_pb_column -->
+        {% if showNews %}
+        <div class="et_pb_column et_pb_column_1_{{nButtons2}}">
+          <div
+            class="et_pb_blurb et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_blurb_7 et_pb_blurb_position_top">
+            <div id="news" class="et_pb_blurb_content">
+              <div class="et_pb_main_blurb_image"><span
+                class="et-pb-icon et-waypoint et_pb_animation_top et-pb-icon-circle et-pb-icon-circle-border et-animated"
+                style="color: #7EBEC5; background-color: #ffffff; border-color: #7EBEC5;"></span>
+              </div>
+              <div class="et_pb_blurb_container">
+                <h4>News</h4>
 
-		</div>
-		<!-- .et_pb_row -->
+                <div inline-editable analytics-outbound-links style="text-align: left;">
+           	     {{page.news}}
+                </div>
+              </div>
+            </div>
+            <!-- .et_pb_blurb_content -->
+          </div>
+          <!-- .et_pb_blurb -->
+        </div>
+        {% endif %}
+        <!-- .et_pb_column -->
 
-	</div>
-	<!-- .et_pb_section -->
-	<div class="et_pb_section  et_pb_section_8 et_pb_with_background et_section_specialty">
+      </div>
+      <!-- .et_pb_row -->
 
-		<div id="contacts" class="et_pb_row" analytics-on="scrollby" scrollby-offset="35%" analytics-event="scroll"
-			 analytics-category="fragment" analytics-label="#contacts">
-		<div class="et_pb_column et_pb_column_1_2 et_pb_column_18 et_pb_column_single">
-			<div class="et_pb_bg_layout_dark" inline-editable ng-bind-html=''>{{page.contact}}
-			</div>
-			<!-- .et_pb_text -->
-		</div>
-		<!-- .et_pb_column -->
-		<div class="et_pb_column et_pb_column_1_2 et_pb_column_19 et_pb_specialty_column">
-			<div class=" et_pb_row_inner et_pb_row_inner_2">
-			<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_3">
-				<div class="et_pb_bg_layout_dark" inline-editable ng-bind-html=''>{{page.techContact}}
-				</div>
-				<!-- .et_pb_text -->
-			</div>
-			<!-- .et_pb_column -->
-			</div>
-			<!-- .et_pb_row_inner -->
-		</div>
-		<!-- .et_pb_column -->
-		</div>
-		<!-- .et_pb_row -->
-	</div>
-	<!-- .et_pb_section -->
-<!-- 	<div class="et_pb_section" ng-show="page.gitters">
-		<h1 class="et_pb_text_align_center">Engage With Us</h1>
+    </div>
+    <!-- .et_pb_section -->
+    <div class="et_pb_section  et_pb_section_8 et_pb_with_background et_section_specialty">
 
-		<div id="engageWithUsContainer" class="flex-container">
-		<div ng-repeat="n in page.gitters" class="flex-item"
-			 style="padding: 4px; border-radius: 25px; border: 2px solid #8AC007;width:{{100 / page.gitters.length - 3}}%;">
-			<h3 style="text-align: center;"><a ng-attr-href='{{getGitterUrl(n, true)}}'
-											 title='Open {{n}} gitter in new window' target="_blank">{{n}}</a></h3><br/>
-			<iframe ng-src="{{getGitterUrl(n)}}" style="height: 400px; width: 100%; display:none"></iframe>
-		</div>
-		</div>
-	</div>
- -->	<!-- .entry-content -->
-	</div>
-<iframe id="pleaseresizeme" src="{{ site.codeWithUsIssuesURL }}" width="100%" frameborder="0" scrolling="no" ></iframe>
+      <div id="contacts" class="et_pb_row" analytics-on="scrollby" scrollby-offset="35%" analytics-event="scroll"
+           analytics-category="fragment" analytics-label="#contacts">
+        <div class="et_pb_column et_pb_column_1_2 et_pb_column_18 et_pb_column_single">
+          <div class="et_pb_bg_layout_dark" inline-editable>
+          {{page.contact}}
+          </div>
+          <!-- .et_pb_text -->
+        </div>
+        <!-- .et_pb_column -->
+        <div class="et_pb_column et_pb_column_1_2 et_pb_column_19 et_pb_specialty_column">
+          <div class=" et_pb_row_inner et_pb_row_inner_2">
+            <div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_3">
+              <div class="et_pb_bg_layout_dark" inline-editable>
+              {{page.techContact}}
+              </div>
+              <!-- .et_pb_text -->
+            </div>
+            <!-- .et_pb_column -->
+          </div>
+          <!-- .et_pb_row_inner -->
+        </div>
+        <!-- .et_pb_column -->
+      </div>
+      <!-- .et_pb_row -->
+    </div>
+    <!-- .et_pb_section -->
+    <!-- OLD gitter was here -->
+    <!-- .entry-content -->
+  </div>
 </article>
 
 <style type="text/css" scoped>
-	.et_pb_blurb_5.et_pb_blurb {
-	font-size: 16px;
-	}
+  .et_pb_blurb_5.et_pb_blurb {
+    font-size: 16px;
+  }
 
-	.et_pb_blurb_5.et_pb_blurb h4 {
-	letter-spacing: 2px;
-	line-height: 2em;
-	}
+  .et_pb_blurb_5.et_pb_blurb h4 {
+    letter-spacing: 2px;
+    line-height: 2em;
+  }
 
-	.et_pb_blurb_4.et_pb_blurb {
-	font-size: 16px;
-	}
+  .et_pb_blurb_4.et_pb_blurb {
+    font-size: 16px;
+  }
 
-	.et_pb_blurb_6.et_pb_blurb h4 {
-	letter-spacing: 2px;
-	line-height: 2em;
-	}
+  .et_pb_blurb_6.et_pb_blurb h4 {
+    letter-spacing: 2px;
+    line-height: 2em;
+  }
 
-	.et_pb_blurb_6.et_pb_blurb {
-	font-size: 16px;
-	}
+  .et_pb_blurb_6.et_pb_blurb {
+    font-size: 16px;
+  }
 
-	.et_pb_section_8 {
-	background-color: #707070;
-	}
+  .et_pb_section_8 {
+    background-color: #707070;
+  }
 
-	.et_pb_blurb_7.et_pb_blurb {
-	font-size: 16px;
-	}
+  .et_pb_blurb_7.et_pb_blurb {
+    font-size: 16px;
+  }
 
-	.et_pb_blurb_7.et_pb_blurb h4 {
-	letter-spacing: 2px;
-	line-height: 2em;
-	}
+  .et_pb_blurb_7.et_pb_blurb h4 {
+    letter-spacing: 2px;
+    line-height: 2em;
+  }
 
-	.et_pb_blurb_4.et_pb_blurb h4 {
-	letter-spacing: 2px;
-	line-height: 2em;
-	}
+  .et_pb_blurb_4.et_pb_blurb h4 {
+    letter-spacing: 2px;
+    line-height: 2em;
+  }
 
-	.et_pb_section_6 {
-	background-color: #494949;
-	}
+  .et_pb_section_6 {
+    background-color: #494949;
+  }
 
-	.et_pb_blurb_0.et_pb_blurb h4 {
-	font-size: 20px;
-	letter-spacing: 2px;
-	}
+  .et_pb_blurb_0.et_pb_blurb h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 
-	.et_pb_section_1 {
-	background-color: #494949;
-	}
+  .et_pb_section_1 {
+    background-color: #494949;
+  }
 
-	.et_pb_section_1 a:hover {
-	color: inherit;
-	}
+  .et_pb_section_1 a:hover {
+    color: inherit;
+  }
 
-	.et_pb_blurb_1.et_pb_blurb h4 {
-	font-size: 20px;
-	letter-spacing: 2px;
-	}
+  .et_pb_blurb_1.et_pb_blurb h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 
-	.et_pb_blurb_2.et_pb_blurb h4 {
-	font-size: 20px;
-	letter-spacing: 2px;
-	}
+  .et_pb_blurb_2.et_pb_blurb h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 
-	.et_pb_section_2 {
-	background-color: #707070;
-	}
+  .et_pb_section_2 {
+    background-color: #707070;
+  }
 
-	.et_pb_section_3 {
-	background-color: #494949;
-	}
+  .et_pb_section_3 {
+    background-color: #494949;
+  }
 
-	.et_pb_blurb_3.et_pb_blurb h4 {
-	font-size: 20px;
-	letter-spacing: 2px;
-	}
+  .et_pb_blurb_3.et_pb_blurb h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 
-	.et_pb_section_parallax {
-	color: white;
-	}
+  .et_pb_section_parallax {
+    color: white;
+  }
 
-	.et_pb_section_parallax a {
-	color: white;
-	}
+  .et_pb_section_parallax a {
+    color: white;
+  }
 
-	.et_pb_section_parallax h2 {
-	color: white;
-	}
+  .et_pb_section_parallax h2 {
+    color: white;
+  }
 
-	.et_pb_column_1_1 {
-	float: inherit
-	}
+  .et_pb_column_1_1 {
+    float: inherit
+  }
 
-	@media only screen and ( min-width: 981px) {
-	.et_pb_section_1 {
-		padding-top: -50;
-	}
-	}
+  @media only screen and ( min-width: 981px) {
+    .et_pb_section_1 {
+      padding-top: -50;
+    }
+  }
 
-	.flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-content: stretch;
-	align-items: flex-start;
-	}
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
 
-	.flex-item {
-	order: 0;
-	flex: 1 1 auto;
-	align-self: auto;
-	margin: 10px;
-	}
+  .flex-item {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    margin: 10px;
+  }
 
-	.fa-circle-border {
-	border-radius: 50%;
-	border: 3px solid white;
-	padding: 18px;
-	color: #ffffff;
-	background-color: #494949;
-	font-size: 80px;
-	}
+  .fa-circle-border {
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 18px;
+    color: #ffffff;
+    background-color: #494949;
+    font-size: 80px;
+  }
 
-	.label {
-	margin: 0 3px 3px 0;
-	display: inline-block;
-	}
+  .label {
+    margin: 0 3px 3px 0;
+    display: inline-block;
+  }
 </style>
