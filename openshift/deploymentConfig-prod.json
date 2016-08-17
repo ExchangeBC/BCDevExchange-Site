@@ -72,8 +72,15 @@
                         ],
                         "resources": {},
                         "terminationMessagePath": "/dev/termination-log",
-                        "imagePullPolicy": "Always"
+                        "imagePullPolicy": "Always",
+                        "env": [
+                            {
+                                "name": "JEKYLL_CONFIG",
+                                "value": "--config=_config.yml,_config-prod.yml"
+                            }
+                        ]
                     }
+
                 ],
                 "restartPolicy": "Always",
                 "terminationGracePeriodSeconds": 30,
