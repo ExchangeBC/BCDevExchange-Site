@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2125fee-9f69-4bc5-bb20-d88fabedf2de" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config-prod.yml" afterPath="$PROJECT_DIR$/_config-prod.yml" />
     </list>
     <ignored path="devex-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config-prod.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config-prod.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config-prod.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="38" />
+              <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="route-prod.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openshift/route-prod.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4583333">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -85,21 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72025055">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="programdata.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/programdata.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-174.375">
-              <caret line="279" column="296" selection-start-line="279" selection-start-column="293" selection-end-line="279" selection-end-column="296" />
               <folding />
             </state>
           </provider>
@@ -146,11 +146,11 @@
         <option value="$PROJECT_DIR$/content/programs.html" />
         <option value="$PROJECT_DIR$/openshift/route-prod.json" />
         <option value="$PROJECT_DIR$/_config-uat.yml" />
-        <option value="$PROJECT_DIR$/_config-prod.yml" />
         <option value="$PROJECT_DIR$/_config-dev.yml" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/openshift/deploymentConfig-prod.json" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/_config-prod.yml" />
       </list>
     </option>
   </component>
@@ -389,7 +389,13 @@
       <option name="project" value="LOCAL" />
       <updated>1471455458261</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- added JEKYLL_CONFIG to command executed to serve site">
+      <created>1471457552893</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1471457552893</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,7 +463,8 @@
     <MESSAGE value="update link tag in program listing to remove 404's." />
     <MESSAGE value="- openshift configuration artifacts and multi-config file support" />
     <MESSAGE value="- added env entry for jekyll_config" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added env entry for jekyll_config" />
+    <MESSAGE value="- added JEKYLL_CONFIG to command executed to serve site" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added JEKYLL_CONFIG to command executed to serve site" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -824,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openshift/route-prod.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/programdata.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-174.375">
@@ -872,14 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openshift/deploymentConfig-prod.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.941177">
@@ -896,6 +887,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -904,10 +903,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/openshift/route-prod.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72025055">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state vertical-scroll-proportion="-2.4583333">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
           <folding />
         </state>
       </provider>
