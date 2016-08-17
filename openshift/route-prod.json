@@ -1,0 +1,36 @@
+{
+    "kind": "Route",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "bcdevexchange-prod-public",
+        "creationTimestamp": null,
+        "labels": {
+            "app": "bcdevexchange-site"
+        }
+    },
+    "spec": {
+        "host": "www.bcdevexchange.org",
+        "to": {
+            "kind": "Service",
+            "name": "bcdevexchange-site-prod"
+        },
+        "port": {
+            "targetPort": "4000-tcp"
+        }
+    },
+    "status": {
+        "ingress": [
+            {
+                "host": "www.bcdevexchange.org",
+                "routerName": "router",
+                "conditions": [
+                    {
+                        "type": "Admitted",
+                        "status": "True",
+                        "lastTransitionTime": "2016-08-02T22:48:33Z"
+                    }
+                ]
+            }
+        ]
+    }
+}
