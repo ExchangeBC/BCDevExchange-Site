@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2125fee-9f69-4bc5-bb20-d88fabedf2de" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config-prod.yml" afterPath="$PROJECT_DIR$/_config-prod.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config-dev.yml" afterPath="$PROJECT_DIR$/_config-dev.yml" />
     </list>
     <ignored path="devex-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config-dev.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config-dev.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="84" />
+              <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -95,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config-prod.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config-prod.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config-prod.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="80" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,12 +145,12 @@
         <option value="$PROJECT_DIR$/content/programs.html" />
         <option value="$PROJECT_DIR$/openshift/route-prod.json" />
         <option value="$PROJECT_DIR$/_config-uat.yml" />
-        <option value="$PROJECT_DIR$/_config-dev.yml" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/openshift/deploymentConfig-prod.json" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_config-prod.yml" />
+        <option value="$PROJECT_DIR$/_config-dev.yml" />
       </list>
     </option>
   </component>
@@ -421,7 +421,13 @@
       <option name="project" value="LOCAL" />
       <updated>1471477252969</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- update protocol for loading iframe so it doesn't break when page is loaded over HTTPS">
+      <created>1471477660740</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1471477660740</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -492,7 +498,8 @@
     <MESSAGE value="- added JEKYLL_CONFIG to command executed to serve site" />
     <MESSAGE value="- update URL for embedded apps" />
     <MESSAGE value="- update protocol for loading jquery so it doesn't break when page is loaded over HTTPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="- update protocol for loading jquery so it doesn't break when page is loaded over HTTPS" />
+    <MESSAGE value="- update protocol for loading iframe so it doesn't break when page is loaded over HTTPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="- update protocol for loading iframe so it doesn't break when page is loaded over HTTPS" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -885,14 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openshift/route-prod.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4583333">
@@ -928,7 +927,15 @@
     <entry file="file://$PROJECT_DIR$/_config-prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="80" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
           <folding />
         </state>
       </provider>
