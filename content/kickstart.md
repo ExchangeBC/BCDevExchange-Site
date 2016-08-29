@@ -26,3 +26,4 @@ permalink: /kickstart/
 </div>
 
 
+<img alt="An idea being explored and shaped. Open for discussion, but may never go anywhere." src="https://camo.githubusercontent.com/1aa819a94b912222d82c328f0af7f91e49cdc317/687474703a2f2f626364657665786368616e67652e6f72672f62616467652f312e737667" title="An idea being explored and shaped. Open for discussion, but may never go anywhere." data-canonical-src="http://bcdevexchange.org/badge/1.svg" style="max-width:100%;">
