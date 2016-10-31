@@ -37,9 +37,9 @@ See the License for the specific language governing permissions and limitations 
 	{% assign showNews = false %}
 {% endif %}
 
-{% if (showNews and showCommunity) %}
+{% if showNews and showCommunity %}
 	{% assign nButtons2 = 3 %}
-{% elsif (showNews or showCommunity) %}
+{% elsif showNews or showCommunity %}
 	{% assign nButtons2 = 2 %}
 {% else %}
 	{% assign nButtons2 = 1 %}
