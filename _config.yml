@@ -1,6 +1,6 @@
 # Site settings
 title: BC Developers' Exchange
-email: BCDevelopersExchange@gov.bc.ca
+email: bcdevexchange@gov.bc.ca
 description: > # this means to ignore newlines until "baseurl:"
   The [BCDevExchange website](http://bcdevexchange.org/) is the public facing site for the BC Developers' Exchange - an experiment in tech innovation and collaboration.
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -19,7 +19,7 @@ apiUrl                        : "http://api.bcdevexchange.org/"
 rapidAdoptionUrl              : "https://github.com/BCDevExchange/rapid-adoption-2/wiki"
 # this MUST have a trailing / to work correctly
 codeWithUsIssuesURL           : "http://localhost:1337/#/app/developers/"
-contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
+contactUsEmail                : "bcdevexchange@gov.bc.ca"
 discoveryBanner               : false # whether to show experimental banner todo - grab this from old site
 developersCarouselImage       : "developers.jpg"
 developersImageLicenseHtml    : "Developers photo adapted from image by <a href='http://hackny.org/' analytics-on>hackny.org</a> Used under license (<a href='https://creativecommons.org/licenses/by-sa/2.0/' analytics-on>CC BY-SA 2.0</a>)"

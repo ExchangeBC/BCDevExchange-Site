@@ -1,7 +1,7 @@
 apiUrl                        : "http://api.bcdevexchange.org/"
 blogPage                      : true
 communityMenu                 : false
-contactUsEmail                : "BCDevelopersExchange@gov.bc.ca"
+contactUsEmail                : "bcdevexchange@gov.bc.ca"
 developersCarouselImage       : "developers.jpg"
 developersImageLicenseHtml    : "Developers photo adapted from image by <a href='http://hackny.org/' analytics-on>hackny.org</a> Used under license (<a href='https://creativecommons.org/licenses/by-sa/2.0/' analytics-on>CC BY-SA 2.0</a>)"
 developersPage                : false
