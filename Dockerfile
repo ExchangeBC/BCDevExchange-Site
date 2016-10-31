@@ -3,8 +3,8 @@ MAINTAINER sheaphillips <shea.phillips@gmail.com>
 
 RUN apk update \
   && apk add ruby-dev libpq libgcc ca-certificates make gcc libc-dev libffi-dev \
-             nodejs zlib-dev libxml2 libxml2-dev libxslt libxslt-dev \
-  && gem install jekyll -N \
+             nodejs zlib-dev libxml2 libxml2-dev libxslt libxslt-dev
+RUN gem install jekyll -N \
   && apk add ruby-json
 
 ADD . /site
